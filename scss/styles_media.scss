@@ -1,0 +1,190 @@
+@import "var";
+@media screen and (width <= 1100px){
+    .navbar-section{
+        .nav-links{
+            gap: 0.8rem;
+            font-size: 1.2rem;
+        }
+    }
+    .about-section{
+        .about-image{
+            width: 100%;
+        }
+    }
+}
+@media screen and (width<= 900px){
+    html{
+        font-size: 90%;
+    }
+    .projects-section{
+        .links a{
+            padding-inline: 1.5rem;
+        }
+        .project-content{
+            column-gap: 4rem;
+        }
+    }
+}
+@media screen and (width<=800px){
+    .navbar-section{
+        .navbar-container{
+            width: 95vw;
+        }
+        .nav-links{
+            gap: 0.3rem;          
+        }
+        .nav-links a{
+            padding-inline: 0.6em;
+            padding-block: 0.3em;
+            border-radius: 2em;
+        }
+    }
+}
+@media screen and (width<= 700px){
+    html{
+        font-size: 80%;
+    }
+    .navbar-container{
+        margin-inline: 0;
+        .hamburg-icon{
+            display: block;
+            position: absolute;
+            top: 4vh;
+            right: 4vw;
+            font-size: 1.5rem;
+        }
+        .nav-links{
+            z-index: 2;
+            flex-direction: column;
+            position: absolute;
+            height: 100dvh;
+            width:0;
+            overflow: hidden;
+            top:0;        
+            right: 0;
+            padding-block-start: 20vh;
+            padding-block-end: 24vh;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $sec-accent-color;
+            color: $accent-color;
+            transition-duration: 0.3s;
+            transition-property: width;
+            font-size: 1.8rem;
+        }
+        .close-icon{
+            position: absolute;
+            top: 4vh;
+            right: 4vw;
+            font-size: 1.5rem;
+        }
+        .active{
+            width: 60vw;
+        }
+        .show{
+            display: block;
+        }
+    }
+    .projects-section{
+        .links{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 1rem;
+            text-align: center;
+        }
+    }
+}
+@media screen and (width<= 600px){
+    .home-section{
+        .box{
+            width: 47vw;
+            aspect-ratio: 1/1;
+        }
+        .home-img img{
+            width: 43vw;
+            aspect-ratio: 1/1;
+            border-width: 0.5rem;
+        }
+        .home-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+        .home-text{
+            align-items: center;
+        }
+    }
+
+    .about-section{
+        .about-content{
+            // grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem;
+        }
+        .about-text{
+            font-size: 1.2rem;
+        }
+        .about-image{
+            width: 50vw;
+        }
+    }
+
+    .projects-section{
+        .project-content{
+            grid-template-columns: 1fr;
+            margin-inline: 10vw;
+        }
+        .project-content img{
+            width: 50vw;
+        }
+    }
+
+    .contact-section{
+        .contact-links{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            text-align: center;
+            gap: 1.5rem;
+            padding: 0;
+            border-radius: 0;
+        }
+        .contact-links span{
+            background-color: $sec-accent-color;
+            // width:max-content;
+            
+            padding-inline: 1.1rem;
+            padding-block: 1rem;
+            border-radius: 50px;
+            background-color: $sec-accent-color;
+            font-weight: 700;
+        }
+    }
+}
+@media screen and (width<= 400px){
+    html{
+        font-size: 70%;
+    }
+    .home-section{
+        .box{
+            width: 57vw;
+            aspect-ratio: 1/1;
+        }
+        .home-img img{
+            width: 53vw;
+            aspect-ratio: 1/1;
+            border-width: 0.5rem;
+        }
+    }
+    .projects-section{
+        .project-content{
+            margin-inline: auto;
+        }
+        .project-content img{
+            width: 70vw;
+        }
+    }
+}
