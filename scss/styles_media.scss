@@ -48,9 +48,7 @@
         margin-inline: 0;
         .hamburg-icon{
             display: block;
-            position: absolute;
-            top: 4vh;
-            right: 4vw;
+            align-self: center;
             font-size: 1.5rem;
         }
         .nav-links{
@@ -74,12 +72,12 @@
         }
         .close-icon{
             position: absolute;
-            top: 4vh;
-            right: 4vw;
+            top: 2vh;
+            right: 7vw;
             font-size: 1.5rem;
         }
         .active{
-            width: 60vw;
+            width: 80vw;
         }
         .show{
             display: block;

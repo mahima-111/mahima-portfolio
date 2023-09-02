@@ -69,6 +69,11 @@ h1 {
   border-radius: 20px;
   padding-inline: 2rem;
   padding-block: 0.5rem;
+  transition-duration: 0.7s;
+}
+
+.btn:visited, .btn:active {
+  color: rgb(90, 7, 105);
 }
 
 .btn:hover {
@@ -115,18 +120,22 @@ i {
   font-size: 2rem;
   gap: 1rem;
 }
+.navbar-section .logo img {
+  height: 2rem;
+  width: 2rem;
+}
 .navbar-section .nav-links {
   display: flex;
   align-items: center;
   list-style-type: none;
-  gap: 3rem;
+  gap: 1rem;
   font-size: 1.4rem;
 }
 .navbar-section .nav-links a {
   color: rgb(90, 7, 105);
-  padding-inline: 1em;
-  padding-block: 0.5em;
-  border-radius: 2em;
+  padding-inline: 0.7rem;
+  padding-block: 0.2rem;
+  border-radius: 2rem;
 }
 .navbar-section .nav-links a:hover {
   background-color: rgb(90, 7, 105);
@@ -175,14 +184,14 @@ i {
 }
 .home-section .inner-box {
   position: relative;
-  top: 2vw;
-  left: 2vw;
+  top: 1.5vw;
+  left: 1.5vw;
 }
 .home-section .home-img img {
   border-radius: 20px;
-  width: 25vw;
+  width: 26vw;
   aspect-ratio: 1/1;
-  border: 1rem solid white;
+  border: 1.3rem solid white;
 }
 .home-section .home-container {
   margin-block-start: 4rem;
@@ -228,6 +237,8 @@ i {
 
 .skills-section .skills-content {
   display: flex;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -238,6 +249,7 @@ i {
   width: 10rem;
   text-align: center;
   cursor: pointer;
+  transition-duration: 0.7s;
 }
 .skills-section .skill:hover {
   background-color: rgb(90, 7, 105);

@@ -26,6 +26,10 @@
     border-radius: 20px;
     padding-inline: 2rem;
     padding-block: 0.5rem;
+    transition-duration: 0.7s;
+}
+.btn:visited,.btn:active{
+    color: $accent-color;
 }
 .btn:hover{
     background-color: $accent-color;

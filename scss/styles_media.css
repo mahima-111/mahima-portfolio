@@ -41,9 +41,7 @@
   }
   .navbar-container .hamburg-icon {
     display: block;
-    position: absolute;
-    top: 4vh;
-    right: 4vw;
+    align-self: center;
     font-size: 1.5rem;
   }
   .navbar-container .nav-links {
@@ -67,12 +65,12 @@
   }
   .navbar-container .close-icon {
     position: absolute;
-    top: 4vh;
-    right: 4vw;
+    top: 2vh;
+    right: 7vw;
     font-size: 1.5rem;
   }
   .navbar-container .active {
-    width: 60vw;
+    width: 80vw;
   }
   .navbar-container .show {
     display: block;
