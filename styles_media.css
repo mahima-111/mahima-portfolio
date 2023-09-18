@@ -1,4 +1,3 @@
-@import "var";
 @media screen and (width <= 1100px){
     .navbar-section{
         .nav-links{
@@ -48,8 +47,8 @@
         margin-inline: 0;
         .hamburg-icon{
             display: block;
-            align-self: center;
             font-size: 1.5rem;
+            align-self: center;
         }
         .nav-links{
             z-index: 2;
@@ -64,8 +63,8 @@
             padding-block-end: 24vh;
             justify-content: space-between;
             align-items: center;
-            background-color: $sec-accent-color;
-            color: $accent-color;
+            background-color: var(--sec-accent-color);
+            color: var(--accent-color);
             transition-duration: 0.3s;
             transition-property: width;
             font-size: 1.8rem;
@@ -117,7 +116,6 @@
 
     .about-section{
         .about-content{
-            // grid-template-columns: 1fr;
             display: flex;
             flex-direction: column-reverse;
             gap: 2rem;
@@ -144,20 +142,20 @@
         .contact-links{
             display: flex;
             flex-direction: column;
-            background-color: white;
+            background-color: var(--bg);
             text-align: center;
             gap: 1.5rem;
             padding: 0;
             border-radius: 0;
         }
         .contact-links span{
-            background-color: $sec-accent-color;
-            // width:max-content;
+            background-color: var(--sec-accent-color);
+            /* width:max-content; */
             
             padding-inline: 1.1rem;
             padding-block: 1rem;
             border-radius: 50px;
-            background-color: $sec-accent-color;
+            background-color: var(--sec-accent-color);
             font-weight: 700;
         }
     }

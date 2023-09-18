@@ -4,6 +4,18 @@ const hamburg=document.querySelector(".hamburg-icon");
 const close=document.querySelector(".close-icon");
 const navLinks=document.querySelector(".nav-links");
 const navItem=document.getElementsByClassName("list-item");
+const themeSwitcher=document.getElementById("theme-switcher");
+
+// for theme switcher
+themeSwitcher.addEventListener('click',()=>{
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        themeSwitcher.src="portfolio-images/sun.png";
+    }
+    else{
+        themeSwitcher.src="portfolio-images/moon.png";
+    }
+});
 
 hamburg.addEventListener('click',()=>{
     navLinks.classList.add('active');

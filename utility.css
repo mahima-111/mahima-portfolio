@@ -1,4 +1,4 @@
-// utility classes
+/* utility classes */
 .wave{
     overflow: hidden;
     object-fit: cover;
@@ -19,21 +19,18 @@
     padding-block: 0.5rem;
 }
 .light{
-    color: $light-text;
+    color: var(--light-text);
 }
 .btn{
-    background-color: $sec-accent-color;
+    background-color: var(--sec-accent-color);
     border-radius: 20px;
     padding-inline: 2rem;
     padding-block: 0.5rem;
     transition-duration: 0.7s;
 }
-.btn:visited,.btn:active{
-    color: $accent-color;
-}
 .btn:hover{
-    background-color: $accent-color;
-    color: $sec-accent-color;
+    background-color: var(--accent-color);
+    color: var(--sec-accent-color);
 }
 .up-arrow{
     position: fixed;
@@ -41,10 +38,10 @@
     right: 1rem;
     font-size: 1.5rem;
     border-radius: 5px;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     padding-block: 0.5rem;
-    padding-inline: 1rem;
-    i{
-        color: $sec-accent-color;
-    }
+    padding-inline: 1rem; 
+}
+.up-arrow i{
+    color: var(--sec-accent-color);
 }

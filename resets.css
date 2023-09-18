@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
 
-@import "var";
 *{
     padding: 0;
     margin: 0;
@@ -15,18 +14,25 @@ html{
     width: 15px;
 }
 ::-webkit-scrollbar-track{
-    background-color: $accent-color;
+    background-color: var(--accent-color);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: $sec-accent-color;
+    background-color: var(--sec-accent-color);
     border-radius: 10px;
 }
 a{
     text-decoration-line: none;
+    color: var(--accent-color);
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg);
+    color: var(--accent-color);
+    transition-duration: 0.6s;
 }
 h1{
     font-size: 2.7rem;
+}
+i{
+    color: var(--accent-color);
 }
